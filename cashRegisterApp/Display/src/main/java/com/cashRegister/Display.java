@@ -20,7 +20,6 @@ public class Display extends JFrame{
         add(UPCCode);
         UPCCode.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                System.out.println(ProductsDB.GetProductInfo(UPCCode.getText()));
                 add(new JLabel(ProductsDB.GetProductInfo(UPCCode.getText()).toString()));
             }
         });
