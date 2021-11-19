@@ -4,7 +4,7 @@ package com.cashRegister;
  * Creates a Product object
  */
 public class Product {
-    private int UPCCode;
+    private String UPCCode;
     private String name;
     private double price;
 
@@ -14,7 +14,7 @@ public class Product {
      * @param name: name of product
      * @param price: price of product
      */
-    public Product(int UPCCode, String name, double price){
+    public Product(String UPCCode, String name, double price){
         this.UPCCode = UPCCode;
         this.name = name;
         this.price = price;
@@ -24,14 +24,14 @@ public class Product {
      * Sets the UPC code for current scanned product
      * @param UPCCode: barcode value
      */
-    public void setUPCCode(int UPCCode) {
+    public void setUPCCode(String UPCCode) {
         this.UPCCode = UPCCode;
     }
 
     /**
      * Returns the UPC code for current scanned product
      */
-    public int getUPCCode() {
+    public String getUPCCode() {
         return UPCCode;
     }
 
@@ -40,10 +40,6 @@ public class Product {
      */
     @Override
     public String toString() {
-        return "Product{" +
-                "UPCCode=" + UPCCode +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return name + ":" + " $" + price;
     }
 }
