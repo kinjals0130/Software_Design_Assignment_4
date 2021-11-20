@@ -22,7 +22,6 @@ public class ProductsDB {
             while (myReader.hasNextLine()) {
                 String[] product = myReader.nextLine().split(",");
                 // Get the UPC code, name and price from the database
-//                int UPC = Integer.parseInt(product[0]);
                 String name = product[1];
                 double price = Double.parseDouble(product[2]);
 

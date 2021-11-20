@@ -11,7 +11,6 @@ public class Display extends JFrame{
     public Display() {
         super("Cash Register");
         init();
-
     }
 
     private void init() {
