@@ -4,10 +4,6 @@
  */
 package com.mycompany;
 
-/**
- *
- * @author Kinjal
- */
 public class CommonUtility {
     public static String getAppName(){
         return "My company app standard version";

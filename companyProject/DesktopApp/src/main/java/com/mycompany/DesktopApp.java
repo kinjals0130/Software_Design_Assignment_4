@@ -7,10 +7,6 @@ package com.mycompany;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- *
- * @author Kinjal
- */
 public class DesktopApp extends JFrame{
     
     static String appName = CommonUtility.getAppName();
